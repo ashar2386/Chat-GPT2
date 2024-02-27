@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "515052592241",
+    "project_id": "appal-fyp",
+    "storage_bucket": "appal-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515052592241:android:5ce1c75591f79056c64fd0",
+        "android_client_info": {
+          "package_name": "com.example.appal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515052592241-5ls824k1h7o0rin1dhqkj0u2t719kph2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appal",
+            "certificate_hash": "ef9c059011f7a7de8e95a8e3fcc3607ba2260c45"
+          }
+        },
+        {
+          "client_id": "515052592241-n6fcpcch8ahru1ug1r5i8br3k6gefba6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appal",
+            "certificate_hash": "5232d49e2de6e52d97e17af409f2b937edb72644"
+          }
+        },
+        {
+          "client_id": "515052592241-3mjmqpsjfj58kg05h6hhrces7s54lgt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0JSZhCokpClNHSOgFrjQrxSnQmyW5_V4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515052592241-3mjmqpsjfj58kg05h6hhrces7s54lgt6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "515052592241-m2i0t04pr631ividbkcpecg5v8si98hu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515052592241:android:dd6f6acf65252606c64fd0",
+        "android_client_info": {
+          "package_name": "com.example.chat_gpt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515052592241-3mjmqpsjfj58kg05h6hhrces7s54lgt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0JSZhCokpClNHSOgFrjQrxSnQmyW5_V4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515052592241-3mjmqpsjfj58kg05h6hhrces7s54lgt6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "515052592241-m2i0t04pr631ividbkcpecg5v8si98hu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.appal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
