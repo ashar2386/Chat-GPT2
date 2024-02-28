@@ -1,5 +1,4 @@
 import 'package:chat_gpt/Services/auth_services.dart';
-import 'package:chat_gpt/Views/home_screen.dart';
 import 'package:chat_gpt/Views/login_screen.dart';
 import 'package:chat_gpt/Views/phone_auth.dart';
 import 'package:chat_gpt/constant/color.dart';
@@ -95,6 +94,9 @@ class _SignupScreenState extends State<SignupScreen> {
   //     _showSnackBar('Google Sign-In Failed');
   //   }
   // }
+
+
+
   Future<void> handleGoogleSignIn() async {
     GoogleSignIn _googleSignIn=GoogleSignIn();
       final GoogleSignInAccount? googleSignInAccount =
@@ -108,10 +110,13 @@ class _SignupScreenState extends State<SignupScreen> {
           idToken: googleSignInAuthentication.idToken,
         );
 
-        UserCredential user =
-            await FirebaseAuth.instance.signInWithCredential(credential);
+        // 113174202304-aq27r0pqtvn4g90nbpffnuud7ds446gt.apps.googleusercontent.com
+
+        UserCredential user = await FirebaseAuth.instance.signInWithCredential(credential);
       }      
   }
+
+
   @override
   Widget build(BuildContext context) {
     // AuthState authState = Provider.of<AuthState>(context);

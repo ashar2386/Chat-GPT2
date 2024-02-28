@@ -1,4 +1,4 @@
-import 'package:chat_gpt/Views/home_screen.dart';
+import 'package:chat_gpt/Views/homescreen.dart';
 import 'package:chat_gpt/constant/color.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -80,7 +80,7 @@ class _PhoneAuthScreenState extends State<PhoneAuthScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const HomeScreen(),
+                    builder: (context) => const Home(),
                   ),
                 );
               },

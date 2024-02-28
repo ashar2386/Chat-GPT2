@@ -1,8 +1,7 @@
-import 'package:chat_gpt/Views/home_screen.dart';
+import 'package:chat_gpt/Views/homescreen.dart';
 import 'package:chat_gpt/Views/signup_screen.dart';
 import 'package:chat_gpt/constant/color.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -13,7 +12,9 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-    final emailController = TextEditingController();
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  bool _ispasswordvisible = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -50,6 +51,33 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 25,
               ),
+              SizedBox(
+                width: MediaQuery.of(context).size.width * 0.23,
+                child: TextFormField(
+                  controller: passwordController,
+                  obscureText: !_ispasswordvisible,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                    labelText: "Enter Password",
+                    suffix: IconButton(
+                      onPressed: () {
+                        setState(() {
+                          _ispasswordvisible = !_ispasswordvisible;
+                        });
+                      },
+                      icon: Icon(
+                        _ispasswordvisible
+                            ? Icons.visibility
+                            : Icons.visibility_off,
+                        size: 20,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20,),
               // Elevated Button
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.08,
@@ -62,6 +90,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   onPressed: () {
+                    FirebaseAuth.instance.signInWithEmailAndPassword(
+                        email: emailController.text,
+                        password: passwordController.text);
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Home(),));
                   },
                   child: const Text(
                     "Continue",
@@ -83,7 +116,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     const Text("Don't have an account? "),
                     TextButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const SignupScreen()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignupScreen()));
                       },
                       child: const Text(
                         "Sign Up",
@@ -114,7 +150,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               // Google Button
               Container(
                 height: MediaQuery.of(context).size.height * 0.09,
@@ -128,10 +166,21 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 child: Row(
                   children: [
-                    SizedBox(width: 20,),
-                    Image.asset("assets/images/googleimage.png",width: 28,height: 35,),
-                    SizedBox(width: 20,),
-                    const Text("Continue with Google",style: TextStyle(fontSize: 18),),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Image.asset(
+                      "assets/images/googleimage.png",
+                      width: 28,
+                      height: 35,
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    const Text(
+                      "Continue with Google",
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ],
                 ),
               ),

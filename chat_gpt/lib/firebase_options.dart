@@ -44,42 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCCbMw2uaDeNjiYygMND2pbTLfAyDXzdDw',
-    appId: '1:515052592241:web:d752229fd78f8b80c64fd0',
-    messagingSenderId: '515052592241',
-    projectId: 'appal-fyp',
-    authDomain: 'appal-fyp.firebaseapp.com',
-    storageBucket: 'appal-fyp.appspot.com',
-    measurementId: 'G-74WEHNZ4EV',
+    apiKey: 'AIzaSyBo2fWbaJgDGwLI3BavWdxGoh0hLfitre8',
+    appId: '1:54649021565:web:f76b53148b8ff47aabfd14',
+    messagingSenderId: '54649021565',
+    projectId: 'chat-gpt-2-5087d',
+    authDomain: 'chat-gpt-2-5087d.firebaseapp.com',
+    storageBucket: 'chat-gpt-2-5087d.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC0JSZhCokpClNHSOgFrjQrxSnQmyW5_V4',
-    appId: '1:515052592241:android:dd6f6acf65252606c64fd0',
-    messagingSenderId: '515052592241',
-    projectId: 'appal-fyp',
-    storageBucket: 'appal-fyp.appspot.com',
+    apiKey: 'AIzaSyB5tVzKG6quBPHGZMhCfWf_hza4gjFeYH4',
+    appId: '1:54649021565:android:ae099e42d197530aabfd14',
+    messagingSenderId: '54649021565',
+    projectId: 'chat-gpt-2-5087d',
+    storageBucket: 'chat-gpt-2-5087d.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCsGUC-I6ulCgMHBIghNnh7EBy9w_DYswc',
-    appId: '1:515052592241:ios:c331987f556db3a9c64fd0',
-    messagingSenderId: '515052592241',
-    projectId: 'appal-fyp',
-    storageBucket: 'appal-fyp.appspot.com',
-    androidClientId: '515052592241-5ls824k1h7o0rin1dhqkj0u2t719kph2.apps.googleusercontent.com',
-    iosClientId: '515052592241-t0d13edlrals447k7elr45mtrcbkt13l.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB0G3-aA7B4uGR1OgNqPJB_1U8CaZBBzq8',
+    appId: '1:54649021565:ios:5fcf7dfe0dc14bf3abfd14',
+    messagingSenderId: '54649021565',
+    projectId: 'chat-gpt-2-5087d',
+    storageBucket: 'chat-gpt-2-5087d.appspot.com',
+    iosClientId: '54649021565-5ja8tpvvabrgnjmbovoejvmd649jn5gp.apps.googleusercontent.com',
     iosBundleId: 'com.example.chatGpt',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCsGUC-I6ulCgMHBIghNnh7EBy9w_DYswc',
-    appId: '1:515052592241:ios:e76d5e37acd2e926c64fd0',
-    messagingSenderId: '515052592241',
-    projectId: 'appal-fyp',
-    storageBucket: 'appal-fyp.appspot.com',
-    androidClientId: '515052592241-5ls824k1h7o0rin1dhqkj0u2t719kph2.apps.googleusercontent.com',
-    iosClientId: '515052592241-7bgpccbs93q1fp2g4161k079hme5dq4c.apps.googleusercontent.com',
+    apiKey: 'AIzaSyB0G3-aA7B4uGR1OgNqPJB_1U8CaZBBzq8',
+    appId: '1:54649021565:ios:74bde9df27bdcee5abfd14',
+    messagingSenderId: '54649021565',
+    projectId: 'chat-gpt-2-5087d',
+    storageBucket: 'chat-gpt-2-5087d.appspot.com',
+    iosClientId: '54649021565-5ok6vnm97a19frccsp08nss9th8gaphu.apps.googleusercontent.com',
     iosBundleId: 'com.example.chatGpt.RunnerTests',
   );
 }

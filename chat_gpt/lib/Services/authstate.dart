@@ -1,8 +1,7 @@
 import 'dart:convert';
 
-import 'package:chat_gpt/Views/home_screen.dart';
 import 'package:chat_gpt/Views/otp_screen.dart';
-import 'package:chat_gpt/models/usermodel.dart';
+import 'package:chat_gpt/model/usermodel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
